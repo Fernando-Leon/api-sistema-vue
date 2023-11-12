@@ -1,0 +1,27 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+ "userName": "admin",
+  "password": "admin"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/entidades/653bb94c0ce014c24ed7f8b3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/entidades/653bb94c0ce014c24ed7f8b3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Hidalgo",
+    "municipios": ["Pachuca", "Tulancingo", "Tizayuca"]
+}
+
+###
+DELETE  http://localhost:9000/api/entidades/653bba4fdaf00332f671079b HTTP/1.1
+

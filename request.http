@@ -1,0 +1,53 @@
+###
+POST http://localhost:9000/api/providers HTTP/1.1
+Content-Type: application/json
+
+{
+    "rfc": "278213",
+    "razonSocial": "nuevo refgistro",
+    "contacto": "Juan Perez",
+    "estado": "Hidalgo",
+    "telefono": "55555555",
+    "telmovil": "55555555",
+    "email": "cocacola@gmail.com",
+    "cp": "55555",
+    "ninterior": "555",
+    "nexterior": "555",
+    "calle": "555",
+    "colonia": "555",
+    "entidad": "555",
+    "municipio": "555"
+}
+
+###
+GET http://localhost:9000/api/providers HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/providers/653a5ec47091e7ae8750be72 HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/providers/653a92acc35dc7e5b3376d0f HTTP/1.1
+Content-Type: application/json
+
+{
+    "rfc": "278213",
+    "razonSocial": "Pepsi",
+    "contacto": "Juan Perez",
+    "telefono": "55555555",
+    "telmovil": "55555555",
+    "email": "cocacola@gmail.com",
+    "cp": "55555",
+    "ninterior": "555",
+    "nexterior": "555",
+    "calle": "555",
+    "colonia": "555",
+    "entidad": "555",
+    "municipio": "555"
+}
+
+###
+DELETE  http://localhost:9000/api/providers/653a5ec47091e7ae8750be72 HTTP/1.1
+
+
